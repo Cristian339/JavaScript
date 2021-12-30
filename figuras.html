@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas / Hallar siertas cosas de figuras geometricas</title>
+</head>
+
+<body>
+    <header>
+        <h1> Areas de figuras geometricas </h1>
+        <p>Aqui podras obtener las areas ciertas figuras como: El triangulo, el cuadrado y el circulo</p>
+    </header>
+    <section>
+        <h2>Calcular el area o el perimetro de un cuadrado</h2>
+        <form>
+            <label for="InputCuadrado">
+                Escribe cuanto mide el lado de tu cuadrado:
+            </label>
+            <input id="InputCuadrado" type="number">
+            <button type="button" onclick="calcularArea()">
+                Calcular el area
+            </button>
+            <button type="button" onclick="calcularPerimetro()">
+                calcular el perimetro
+            </button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Calcular el area o perimetro de un triangulo</h2>
+        <form>
+            <label for="InputTriangulo">
+                Escribe cuanto mide los lados de tu triangulo
+            </label>
+            <input id="InputTriangulo" type="number">
+            <button type="button" onclick="calcularAreaTri()">
+                Calcular el area
+            </button>
+            <button type="button" onclick="calcularPerimetroTri()">
+                Calcular el perimetro
+            </button>
+        </form>
+    </section>
+    <section>
+        <h2>Hallar el area y perimetro de un circulo</h2>
+        <form>
+            <label for="InputCirculo">
+                Introduzca el valor del radio
+            </label>
+            <input id="InputCirculo" type="number">
+            <button type="button" onclick="calcularAreaCirculo()">
+                Calcular el area
+            </button>
+            <button type="button" onclick="calcularPerimetroCirculo()">
+                Calcular el perimetro
+            </button>
+        </form>
+    </section>
+
+    <section>
+        <h2> Hallar la altura de un triangulo isosceles</h2>
+        <form>
+            <label for="InputLadoDif">
+                Introduzca los valores
+            </label>
+
+            <span> Lado diferente: </span>
+            <input id="InputLadoDif" type="number">
+            <span> Lado igual 1: </span>
+            <input id="InputLadoIg1" type="number">
+            <span> Lado igual 2: </span>
+            <input id="InputLadoIg2" type="number">
+            <button type="button" onclick="calcularAlturaIsosceles()">
+                Calcular Altura
+            </button>
+        </form>
+
+    </section>
+    <script src="./figuras.js">
+    </script>
+</body>
+
+</html>

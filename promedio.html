@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halla el promedio,mediana y moda</title>
+</head>
+
+<body>
+    <h1>Promedio,mediana y moda</h1>
+    <section>
+        <form>
+            <h2>
+                Calcular promedio
+            </h2>
+            <input id="AgregarValor" type="number">
+            <p id="valorAniadido">
+
+            </p>
+            <label for="PromedioTotal"></label>
+            <button type="button" onclick="agregarElemento()">
+                Agregar Valor
+            </button>
+            <button type="button" onclick="calcPromdio()">
+                Calcular el promedio de los elementos
+            </button>
+            <p id="ResultProm"></p>
+        </form>
+        <form>
+            <input id="valorElemento" type="number">
+            <button type="button" onclick="añadirVal()">
+                Agregar valor
+            </button>
+            <p id="impValorAgreg"></p>
+            <button type="button" onclick="calcMediana()">
+                Obtener promedio
+            </button>
+            <p id="impResult"></p>
+        </form>
+
+        <form>
+            <h2>
+                Calcular la Moda
+            </h2>
+            <input id="entradaMod" type="text">
+            <button type="button" onclick="agregValorModa()">
+                Agregar valor
+            </button>
+            <p id="inputModa"></p>
+            <button type="button" onclick="calcModa()">
+                Hallar moda
+            </button>
+            <p id="inputResult"></p>
+        </form>
+
+        <form>
+            <h2>
+                Hallar media geometrica
+            </h2>
+            <input id = "aniadirVal" type = "number">
+            <button type="button" onclick="agregarValor()">
+            Agregar valor
+            </button>
+            <p id = "inputValorGeom">
+    
+            </p>
+            <button type="button" onclick="calcMediaGeom()">
+            Calcular la Media Geometrica
+            </button>
+            <p id = "inputResultGeom"></p>
+        </form>
+
+    </section>
+    <script src="./promedio.js"></script>
+</body>
+
+</html>

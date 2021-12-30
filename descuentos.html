@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obten el porcentage de descuento de algun producto que te estan promocionando</title>
+</head>
+
+<body>
+    <h1> Porcentages de descuento</h1>
+
+    <section>
+        <h2>
+            Calcular el descuento para obtener de un producto que obtienes un porcentage de descuento
+        </h2>
+        <form>
+            <label for="ImputPrecio"> Introduce tu precio:</label>
+            <input id="ImputPrecio" type="number">
+            <label for="InputDescuento"> Introduce tu descuento del producto:</label>
+            <input id="InputDescuento" type="number">
+            <button type="button" onclick="calcDescuento()">
+                Calcular descuento
+            </button>
+
+            <p id="ResultadoDescuento">
+            </p>
+        </form>
+    </section>
+    <section>
+        <h2>
+            Productos con cupon disponibles en la tienda
+        </h2>
+        <form>
+            <label for="PrecioProducto">
+                Introduce el precio de tu producto:
+            </label>
+            <input id="precioProducto" type="number">
+            <label for="descuentoMiProducto">
+                Escribe el cupon de descuento para tu producto:
+            </label>
+            <input id="descuentoMiProducto" type="text">
+
+            <button type="button" onclick="ObtenerDescuentoMasCupon()">
+                Obtener descuento con el cupon:
+            </button>
+            <p id="CantDescuento"></p>
+            <p id="ResultadoCuponDescuento"></p>
+        </form>
+    </section>
+
+
+    <script src="./descuentos.js"></script>
+</body>
+
+</html>
